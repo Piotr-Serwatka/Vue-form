@@ -95,7 +95,6 @@ export default {
       if (formIsValid) {
         ApiService.get().then(() => {
           this.submitted = true;
-          console.log('OK');
         })
         .catch(err => {
           console.log(err)
